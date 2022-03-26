@@ -118,7 +118,7 @@ main {
 }
 /* Below if we remove 'readonly' from .content input, it will turn pink, which is a good indicator that its working properly*/
 #tasks .task .content .text:not(:read-only) {
-  color: var(--pink);
+  color: var(--light);
 }
 
 #tasks .task .actions {
