@@ -88,3 +88,35 @@ main {
   width: 100%;
   margin: 0 auto;
 }
+
+.task-list {
+  padding: 1rem;
+}
+
+.task-list h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: var(--gray);
+}
+
+#tasks .task {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--darkest);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+#tasks .task .content .text {
+  color: var(--light);
+  font-size: 1.125rem;
+  width: 100%;
+  display: block;
+  transition: 0.4s;
+}
+/* Below if we remove 'readonly' from .content input, it will turn pink, which is a good indicator that its working properly*/
+#tasks .task .content .text:not(:read-only) {
+  color: var(--pink);
+}
